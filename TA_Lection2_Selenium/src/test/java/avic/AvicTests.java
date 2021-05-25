@@ -38,6 +38,11 @@ public class AvicTests {
 
     //TODO: write 3-4 more tests, to test functionality of AVIC.UA
 
+    @Test
+    public void checkSomething(){
+        assertEquals(1,1);
+    }
+
     @AfterMethod
     public void tearDown() {
         driver.close();
