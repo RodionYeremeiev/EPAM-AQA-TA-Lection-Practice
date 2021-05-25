@@ -64,7 +64,7 @@ public class AvicTests {
         driver.findElement(xpath("//div[@class='brand-box__title']/a[contains(@href,'iphone')]")).click();//iphone
         new WebDriverWait(driver, 30).until(
                 webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));//wait for page loading
-        driver.findElement(xpath("//a[@class='prod-cart__buy'][contains(@data-ecomm-cart,' Pacific Blue (MGDL3)')]")).click();//add to cart iphone
+        driver.findElement(xpath("//a[@class='prod-cart__buy'][contains(@data-ecomm-cart,'64GB Black (MGDX3)')]")).click();//add to cart iphone
         WebDriverWait wait = new WebDriverWait(driver, 30);//ждем пока не отобразится попап с товаром добавленным в корзину
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("js_cart")));
         driver.findElement(xpath("//div[@class='btns-cart-holder']//a[contains(@class,'btn--orange')]")).click();//продолжить покупки
