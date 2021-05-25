@@ -43,6 +43,13 @@ public class AvicTests {
         assertEquals(1,1);
     }
 
+    @Test
+    public void checkSomethingToo(){
+        assertEquals(1,1);
+    }
+
+
+
     @AfterMethod
     public void tearDown() {
         driver.close();
